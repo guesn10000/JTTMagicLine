@@ -1,0 +1,20 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#if 1
+#define __DEBUG__
+#endif
+
+#ifdef __DEBUG__
+    #define JTTLog(...) NSLog(__VA_ARGS__)
+#else
+    #define JTTLog(...) do{} while(0)
+#endif

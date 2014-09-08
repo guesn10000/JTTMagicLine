@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EB1FB819BD794E00D38459 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EB1FB719BD794E00D38459 /* AppKit.framework */; };
+		18EB1FBA19BD794E00D38459 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EB1FB919BD794E00D38459 /* Foundation.framework */; };
+		18EB1FC019BD794E00D38459 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1FBE19BD794E00D38459 /* InfoPlist.strings */; };
+		18EB1FCC19BD79A100D38459 /* JTTMagicLineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FCB19BD79A100D38459 /* JTTMagicLineManager.m */; };
+		18EB1FCE19BD7BD100D38459 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EB1FCD19BD7BD100D38459 /* Cocoa.framework */; };
+		18EB1FD219BD7CBC00D38459 /* JTTSettingPanelWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FD119BD7CBC00D38459 /* JTTSettingPanelWindowController.m */; };
+		18EB1FD419BD7D1E00D38459 /* JTTSettingPanelWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1FD319BD7D1E00D38459 /* JTTSettingPanelWindowController.xib */; };
+		18EB1FD819BD7F7200D38459 /* NSTextView+JTTTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FD719BD7F7200D38459 /* NSTextView+JTTTextGetter.m */; };
+		18EB1FDC19BD802600D38459 /* JTTTextResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FDB19BD802600D38459 /* JTTTextResult.m */; };
+		18EB1FE019BD824D00D38459 /* NSString+JTTTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FDF19BD824D00D38459 /* NSString+JTTTextGetter.m */; };
+		18EB1FFA19BD8C8A00D38459 /* JTTMagicLineSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FF919BD8C8A00D38459 /* JTTMagicLineSetting.m */; };
+		18EB1FFD19BD901300D38459 /* JTTMagicLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FFC19BD901300D38459 /* JTTMagicLine.m */; };
+		18EB200019BD95AF00D38459 /* JTTKeyboardEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1FFF19BD95AF00D38459 /* JTTKeyboardEventSender.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18EB1FB419BD794E00D38459 /* JTTMagicLine.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTTMagicLine.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EB1FB719BD794E00D38459 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		18EB1FB919BD794E00D38459 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18EB1FBD19BD794E00D38459 /* JTTMagicLine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTTMagicLine-Info.plist"; sourceTree = "<group>"; };
+		18EB1FBF19BD794E00D38459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18EB1FC419BD794E00D38459 /* JTTMagicLine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JTTMagicLine-Prefix.pch"; sourceTree = "<group>"; };
+		18EB1FCA19BD79A100D38459 /* JTTMagicLineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTMagicLineManager.h; sourceTree = "<group>"; };
+		18EB1FCB19BD79A100D38459 /* JTTMagicLineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTMagicLineManager.m; sourceTree = "<group>"; };
+		18EB1FCD19BD7BD100D38459 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		18EB1FD019BD7CBC00D38459 /* JTTSettingPanelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTTSettingPanelWindowController.h; path = JTTSetting/JTTSettingPanelWindowController.h; sourceTree = "<group>"; };
+		18EB1FD119BD7CBC00D38459 /* JTTSettingPanelWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTTSettingPanelWindowController.m; path = JTTSetting/JTTSettingPanelWindowController.m; sourceTree = "<group>"; };
+		18EB1FD319BD7D1E00D38459 /* JTTSettingPanelWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JTTSettingPanelWindowController.xib; path = JTTSetting/JTTSettingPanelWindowController.xib; sourceTree = "<group>"; };
+		18EB1FD619BD7F7200D38459 /* NSTextView+JTTTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTextView+JTTTextGetter.h"; path = "JTTCategory/NSTextView+JTTTextGetter.h"; sourceTree = "<group>"; };
+		18EB1FD719BD7F7200D38459 /* NSTextView+JTTTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTextView+JTTTextGetter.m"; path = "JTTCategory/NSTextView+JTTTextGetter.m"; sourceTree = "<group>"; };
+		18EB1FDA19BD802600D38459 /* JTTTextResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTTTextResult.h; path = JTTCategory/JTTTextResult.h; sourceTree = "<group>"; };
+		18EB1FDB19BD802600D38459 /* JTTTextResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTTTextResult.m; path = JTTCategory/JTTTextResult.m; sourceTree = "<group>"; };
+		18EB1FDE19BD824D00D38459 /* NSString+JTTTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+JTTTextGetter.h"; path = "JTTCategory/NSString+JTTTextGetter.h"; sourceTree = "<group>"; };
+		18EB1FDF19BD824D00D38459 /* NSString+JTTTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JTTTextGetter.m"; path = "JTTCategory/NSString+JTTTextGetter.m"; sourceTree = "<group>"; };
+		18EB1FF819BD8C8A00D38459 /* JTTMagicLineSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTTMagicLineSetting.h; path = JTTSetting/JTTMagicLineSetting.h; sourceTree = "<group>"; };
+		18EB1FF919BD8C8A00D38459 /* JTTMagicLineSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTTMagicLineSetting.m; path = JTTSetting/JTTMagicLineSetting.m; sourceTree = "<group>"; };
+		18EB1FFB19BD901300D38459 /* JTTMagicLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTMagicLine.h; sourceTree = "<group>"; };
+		18EB1FFC19BD901300D38459 /* JTTMagicLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTMagicLine.m; sourceTree = "<group>"; };
+		18EB1FFE19BD95AF00D38459 /* JTTKeyboardEventSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTTKeyboardEventSender.h; path = JTTKeyboard/JTTKeyboardEventSender.h; sourceTree = "<group>"; };
+		18EB1FFF19BD95AF00D38459 /* JTTKeyboardEventSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTTKeyboardEventSender.m; path = JTTKeyboard/JTTKeyboardEventSender.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EB1FB119BD794E00D38459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EB1FCE19BD7BD100D38459 /* Cocoa.framework in Frameworks */,
+				18EB1FB819BD794E00D38459 /* AppKit.framework in Frameworks */,
+				18EB1FBA19BD794E00D38459 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EB1FAB19BD794E00D38459 = {
+			isa = PBXGroup;
+			children = (
+				18EB1FBB19BD794E00D38459 /* JTTMagicLine */,
+				18EB1FB619BD794E00D38459 /* Frameworks */,
+				18EB1FB519BD794E00D38459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18EB1FB519BD794E00D38459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FB419BD794E00D38459 /* JTTMagicLine.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EB1FB619BD794E00D38459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FCD19BD7BD100D38459 /* Cocoa.framework */,
+				18EB1FB719BD794E00D38459 /* AppKit.framework */,
+				18EB1FB919BD794E00D38459 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18EB1FBB19BD794E00D38459 /* JTTMagicLine */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FD519BD7F0800D38459 /* JTTCategory */,
+				18EB200119BD95B800D38459 /* JTTKeyboard */,
+				18EB1FCF19BD7C7700D38459 /* JTTSetting */,
+				18EB1FCA19BD79A100D38459 /* JTTMagicLineManager.h */,
+				18EB1FCB19BD79A100D38459 /* JTTMagicLineManager.m */,
+				18EB1FFB19BD901300D38459 /* JTTMagicLine.h */,
+				18EB1FFC19BD901300D38459 /* JTTMagicLine.m */,
+				18EB1FBC19BD794E00D38459 /* Supporting Files */,
+			);
+			path = JTTMagicLine;
+			sourceTree = "<group>";
+		};
+		18EB1FBC19BD794E00D38459 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FBD19BD794E00D38459 /* JTTMagicLine-Info.plist */,
+				18EB1FBE19BD794E00D38459 /* InfoPlist.strings */,
+				18EB1FC419BD794E00D38459 /* JTTMagicLine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18EB1FCF19BD7C7700D38459 /* JTTSetting */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FF819BD8C8A00D38459 /* JTTMagicLineSetting.h */,
+				18EB1FF919BD8C8A00D38459 /* JTTMagicLineSetting.m */,
+				18EB1FD019BD7CBC00D38459 /* JTTSettingPanelWindowController.h */,
+				18EB1FD119BD7CBC00D38459 /* JTTSettingPanelWindowController.m */,
+				18EB1FD319BD7D1E00D38459 /* JTTSettingPanelWindowController.xib */,
+			);
+			name = JTTSetting;
+			sourceTree = "<group>";
+		};
+		18EB1FD519BD7F0800D38459 /* JTTCategory */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FDD19BD81B200D38459 /* NSString+JTTTextGetter */,
+				18EB1FD919BD7F8800D38459 /* NSTextView+JTTTextGetter */,
+				18EB1FDA19BD802600D38459 /* JTTTextResult.h */,
+				18EB1FDB19BD802600D38459 /* JTTTextResult.m */,
+			);
+			name = JTTCategory;
+			sourceTree = "<group>";
+		};
+		18EB1FD919BD7F8800D38459 /* NSTextView+JTTTextGetter */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FD619BD7F7200D38459 /* NSTextView+JTTTextGetter.h */,
+				18EB1FD719BD7F7200D38459 /* NSTextView+JTTTextGetter.m */,
+			);
+			name = "NSTextView+JTTTextGetter";
+			sourceTree = "<group>";
+		};
+		18EB1FDD19BD81B200D38459 /* NSString+JTTTextGetter */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FDE19BD824D00D38459 /* NSString+JTTTextGetter.h */,
+				18EB1FDF19BD824D00D38459 /* NSString+JTTTextGetter.m */,
+			);
+			name = "NSString+JTTTextGetter";
+			sourceTree = "<group>";
+		};
+		18EB200119BD95B800D38459 /* JTTKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18EB1FFE19BD95AF00D38459 /* JTTKeyboardEventSender.h */,
+				18EB1FFF19BD95AF00D38459 /* JTTKeyboardEventSender.m */,
+			);
+			name = JTTKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EB1FB319BD794E00D38459 /* JTTMagicLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EB1FC719BD794E00D38459 /* Build configuration list for PBXNativeTarget "JTTMagicLine" */;
+			buildPhases = (
+				18EB1FB019BD794E00D38459 /* Sources */,
+				18EB1FB119BD794E00D38459 /* Frameworks */,
+				18EB1FB219BD794E00D38459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTTMagicLine;
+			productName = JTTMagicLine;
+			productReference = 18EB1FB419BD794E00D38459 /* JTTMagicLine.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EB1FAC19BD794E00D38459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JTT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Jymn_Chen;
+			};
+			buildConfigurationList = 18EB1FAF19BD794E00D38459 /* Build configuration list for PBXProject "JTTMagicLine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18EB1FAB19BD794E00D38459;
+			productRefGroup = 18EB1FB519BD794E00D38459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EB1FB319BD794E00D38459 /* JTTMagicLine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EB1FB219BD794E00D38459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EB1FD419BD7D1E00D38459 /* JTTSettingPanelWindowController.xib in Resources */,
+				18EB1FC019BD794E00D38459 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EB1FB019BD794E00D38459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EB1FDC19BD802600D38459 /* JTTTextResult.m in Sources */,
+				18EB200019BD95AF00D38459 /* JTTKeyboardEventSender.m in Sources */,
+				18EB1FD219BD7CBC00D38459 /* JTTSettingPanelWindowController.m in Sources */,
+				18EB1FE019BD824D00D38459 /* NSString+JTTTextGetter.m in Sources */,
+				18EB1FD819BD7F7200D38459 /* NSTextView+JTTTextGetter.m in Sources */,
+				18EB1FFD19BD901300D38459 /* JTTMagicLine.m in Sources */,
+				18EB1FCC19BD79A100D38459 /* JTTMagicLineManager.m in Sources */,
+				18EB1FFA19BD8C8A00D38459 /* JTTMagicLineSetting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18EB1FBE19BD794E00D38459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EB1FBF19BD794E00D38459 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18EB1FC519BD794E00D38459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18EB1FC619BD794E00D38459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18EB1FC819BD794E00D38459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTTMagicLine/JTTMagicLine-Prefix.pch";
+				INFOPLIST_FILE = "JTTMagicLine/JTTMagicLine-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		18EB1FC919BD794E00D38459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTTMagicLine/JTTMagicLine-Prefix.pch";
+				INFOPLIST_FILE = "JTTMagicLine/JTTMagicLine-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EB1FAF19BD794E00D38459 /* Build configuration list for PBXProject "JTTMagicLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EB1FC519BD794E00D38459 /* Debug */,
+				18EB1FC619BD794E00D38459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EB1FC719BD794E00D38459 /* Build configuration list for PBXNativeTarget "JTTMagicLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EB1FC819BD794E00D38459 /* Debug */,
+				18EB1FC919BD794E00D38459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EB1FAC19BD794E00D38459 /* Project object */;
+}
