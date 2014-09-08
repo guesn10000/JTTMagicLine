@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180FD99919BDD2B600CFB1C3 /* TODO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TODO.h; sourceTree = "<group>"; };
 		18EB1FB419BD794E00D38459 /* JTTMagicLine.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTTMagicLine.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EB1FB719BD794E00D38459 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		18EB1FB919BD794E00D38459 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +101,7 @@
 				18EB1FCB19BD79A100D38459 /* JTTMagicLineManager.m */,
 				18EB1FFB19BD901300D38459 /* JTTMagicLine.h */,
 				18EB1FFC19BD901300D38459 /* JTTMagicLine.m */,
+				180FD99919BDD2B600CFB1C3 /* TODO.h */,
 				18EB1FBC19BD794E00D38459 /* Supporting Files */,
 			);
 			path = JTTMagicLine;
