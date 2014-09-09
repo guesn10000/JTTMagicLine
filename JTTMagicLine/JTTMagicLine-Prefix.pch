@@ -9,6 +9,14 @@
     #import <Cocoa/Cocoa.h>
 #endif
 
+/*
+ (NSLog)((format), ##__VA_ARGS__);中出现了另一个预定义的宏__VA_ARGS__
+ __VA_ARGS__表示的是宏定义中的...中的所有剩余参数。我们之前说过可变参数将被统一处理，在这里展开的时候编译器会将__VA_ARGS__直接替换为输入中从第二个参数开始的剩余参数。
+ 两个井号的意思是将前后两项合并，将前面的格式化字符串和后面的参数列表合并，这样我们就得到了一个完整的NSLog方法了
+ 
+ 参考资料: http://onevcat.com/2014/01/black-magic-in-macro/
+ */
+
 #if 1
 #define __DEBUG__
 #endif

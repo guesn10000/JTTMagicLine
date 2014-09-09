@@ -18,17 +18,20 @@
 
 @property (nonatomic, strong) id eventMonitor;
 
+/* 打开插件的设置面板 */
 @property (nonatomic, strong) JTTSettingPanelWindowController *settingPanel;
 
 @end
 
 @implementation JTTMagicLineManager
 
+/* 插件启动时创建JTTMagicLineManager单例对象 */
 + (void)pluginDidLoad:(NSBundle *)plugin {
     JTTLog(@"JTTMagicLine: Plugin loaded successfully");
     [[self class] sharedInstance];
 }
 
+/* 单例方法，调用初始化方法 */
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     static id instance = nil;
@@ -38,6 +41,7 @@
     return instance;
 }
 
+/* 初始化方法，监听程序启动的消息 */
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -49,6 +53,7 @@
     return self;
 }
 
+/* 程序启动后，开始监听文字编辑区域中文字改变的消息，并在Xcode菜单中添加插件设置的菜单选项 */
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textStorageDidChange:)
@@ -57,6 +62,7 @@
     [self addSettingMenu];
 }
 
+/* 在Xcode菜单的Window选项中添加菜单选项：JTTMagicLine，点击后打开插件设置面板 */
 - (void)addSettingMenu {
     NSMenuItem *editMenuItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
     if (editMenuItem) {
@@ -69,11 +75,13 @@
     }
 }
 
+/* 在点击JTTMagicLine的菜单选项后，创建并打开插件设置面板 */
 - (void)showSettingPanel:(NSNotification *)noti {
     self.settingPanel = [[JTTSettingPanelWindowController alloc] initWithWindowNibName:@"JTTSettingPanelWindowController"];
     [self.settingPanel showWindow:self.settingPanel];
 }
 
+/* Xcode编辑区域中的文字改变，在这里做Magic Line替换的工作 */
 - (void)textStorageDidChange:(NSNotification *)aNotification {
     if (![[aNotification object] isKindOfClass:[NSTextView class]]) {
         return;

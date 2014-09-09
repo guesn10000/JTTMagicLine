@@ -27,6 +27,7 @@ NSString * const kJTTTriggerString = @"JTTDefaultTriggerStringKey";
     return defaultSetting;
 }
 
+/* 获取触发注释替换的字符串，该值保存在NSUserDefaults中，默认值为m g l */
 - (NSString *)triggerString {
     NSString *s = [[NSUserDefaults standardUserDefaults] stringForKey:kJTTTriggerString];
     if (s.length == 0) {
@@ -35,6 +36,7 @@ NSString * const kJTTTriggerString = @"JTTDefaultTriggerStringKey";
     return s;
 }
 
+/* 判断用户的键盘布局，是否使用Dvorak类型的键盘 */
 - (BOOL)useDvorakLayout {
     TISInputSourceRef inputSource = TISCopyCurrentKeyboardLayoutInputSource();
     NSString *layoutID = (__bridge NSString *)TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceID);

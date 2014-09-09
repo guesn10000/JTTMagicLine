@@ -12,10 +12,12 @@
 
 @implementation NSTextView (JTTTextGetter)
 
+/* 获取当前鼠标光标的位置 */
 - (NSInteger)jtt_currentCurseLocation {
     return [[self selectedRanges][0] rangeValue].location;
 }
 
+/* 获取当前鼠标光标所在行的文字，结果以JTTTextResult形式返回 */
 - (JTTTextResult *)jtt_textResultOfCurrentLine {
     return [self.textStorage.string jtt_textResultOfCurrentLineCurrentLocation:[self jtt_currentCurseLocation]];
 }

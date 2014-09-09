@@ -11,6 +11,7 @@
 
 @implementation NSString (JTTTextGetter)
 
+/* 获取当前鼠标光标所在行的文字，结果以JTTTextResult形式返回 */
 - (JTTTextResult *)jtt_textResultOfCurrentLineCurrentLocation:(NSInteger)location {
     NSInteger curseLocation = location;
     NSRange range = NSMakeRange(0, curseLocation);

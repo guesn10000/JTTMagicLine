@@ -10,6 +10,7 @@
 
 @implementation JTTMagicLine
 
+/* 获取Magic Line: 91个"/" */
 + (NSString *)magicLine {
     NSMutableString *magicLine = [NSMutableString string];
     NSString *seperator = @"/";
