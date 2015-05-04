@@ -63,6 +63,10 @@
 }
 
 - (void)endKeyBoradEvents {
+    if (_source == nil) {
+        return;
+    }
+    
     NSAssert(_source != NULL, @"You should call -beginKeyBoradEvents before end current keyborad event");
     CFRelease(_source);
     _source = nil;

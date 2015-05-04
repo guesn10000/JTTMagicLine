@@ -133,6 +133,7 @@
     [simKeyboard sendKeyCode:kKeyVCode withModifierCommand:YES alt:NO shift:NO control:NO];
     
     [simKeyboard sendKeyCode:kVK_Return];
+    [simKeyboard sendKeyCode:kVK_Return];
 
     // The key down is just a defined finish signal by me. When we receive this key, we know operation above is finished.
     [simKeyboard sendKeyCode:kVK_F20];
@@ -145,6 +146,7 @@
             self.eventMonitor = nil;
             
             // Restore previois patse board content
+            [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
             [pasteBoard setString:originPBString forType:NSStringPboardType];
             
             // Set cursor before the inserted magic line. So we can use tab to begin edit.
